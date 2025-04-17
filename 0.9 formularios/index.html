@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+Formulários=> são elementos que permitem a entrada de dados do usuário.
+- tags: form, input, button, textarea, select, option
+- form: formulário
+- input: campo de entrada de dados
+- button: botão
+- textarea: campo de texto
+- select: caixa de seleção
+- option: opção de seleção
+- radio: botão de seleção
+- checkbox: caixa de seleção
+
+
+-->
+<html>
+<head>
+	<title>Página principal</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<h2>Login</h2>
+	<form>
+		Login: <br>
+		<!--
+		type = tipo do input, no caso texto.
+		os tipos de type são:
+		- text: campo de texto
+		- password: campo de senha
+		- email: campo de email
+		- number: campo de número
+		- date: campo de data
+		- radio: botão de seleção
+		- checkbox: caixa de seleção
+		- submit: botão de envio
+		- button: botão
+		- file: campo de arquivo
+		- hidden: campo oculto
+		- image: campo de imagem
+		- reset: botão de reset
+		- tel: campo de telefone
+		- url: campo de url
+		- search: campo de busca
+		- color: campo de cor
+		- range: campo de intervalo
+		- password: campo de senha
+		- time: campo de hora
+		- week: campo de semana
+		- month: campo de mês
+		- datetime-local: campo de data e hora
+		
+
+
+		id = identificador do input
+
+		name = nome do input, é o nome que será enviado para o servidor e recuperado 
+		com uma linguagem de programação.
+		Também é utilizado para passar os dados para a próxima página...
+		(ver url)
+
+		placeholder = texto que aparece no campo antes do usuário digitar
+		required = campo obrigatório
+		-->
+		<input type="text" name="loginRodrigo">
+		<br>
+
+		Senha: <br>
+		<input type="password" name="senha">
+		<br>
+       <!--
+		value = texto que aparece no botão
+		type = submit: botão de envio, no entando precisa de uma lingaguem de
+		programação para enviar os dados.
+		OBS: o botão de envio é o único que precisa de uma linguagem de programação.
+		OBS2: deixar sempre por último o botão de envio.
+		
+	   -->
+		<input type="button" value="Logar">
+
+	
+</body>
+</html>

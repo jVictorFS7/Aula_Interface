@@ -1,0 +1,294 @@
+<!-- ********************************************************
+Cabeçalhos e comentários.
+- usar a tag br, (break) observar que não existe fechamento dessa tag
+- tag header(cabeçalho), ou tags h.
+- deixar, cabeçalhos de 1 a 6
+
+*************************************************************-->
+
+<!-- ********************************************************
+- Parágrafo (bloco único de texto)
+- usar tag h2 para cabeçalho
+- usar tag p (criar um parágrafo qualquer)
+
+- mostrar os espaçamentos entre, linhas e parágrafos existem por padrão.O espaçamento é sempre após o parágrafo.
+
+- a tag br, retira esse espaçamento.
+
+- usar lorem ipsium https://www.lipsum.com/feed/html
+- deixar, cabeçalhos de 1 a 6
+- usar tag hr (horizontal rule) = linha horizontal
+
+*************************************************************-->
+
+<!-- ********************************************************
+Listas ordenadas e não ordenadas
+
+- lista não ordenada usar tag <ul> Unordered list
+- item da listas utiliza-se <li> (list item)
+
+-usar o atributo type dentro a lista. 
+o atributo type, é utilizado para 'formatar' os marcadores
+temos: circle, square, disc
+
+- lista ordenada <ol> Ordered List. segue a mesma forma da lista
+- <li></li> list item
+- usar o atributo type (A,a,i,I,1)
+
+*************************************************************-->
+
+<!-- Lista não ordenada circle, square,
+disc -->
+
+<!-- Lista ordenada 1, A, a, I
+disc -->
+
+<!-- ********************************************************
+Exibição de imagens dentro do website.
+
+atributos width = largura em pixels. Também pode ser em porcentagem.
+atributos height = altura em pixels. Também pode ser em porcentagem.
+
+- pra descobrir o tamanho da imagem, basta clicar com 
+o botao direito na imagem e ir na opçao propriedades, e detalhes.
+-- você também pode colocar no windows explorer a opção dimensões para
+exibir o tamalho da imagem.
+
+
+
+*************************************************************-->
+
+<!-- ********************************************************
+Links:
+
+- O que é um link.
+- redirecionamento de links.
+- menu com links.
+- entrar em sites: microsoft.com, bbc, gloogle cloud.
+- tag a = anchor = âncora.
+- href = h de hiperlink e ref de reference.
+
+- 
+
+- criar um link externo: 
+- criar uma pagina index.html,
+- criar uma pagina empresa.html,
+- criar uma página ecommerce.html
+*************************************************************-->
+
+<!--quando não definimos um link, ele carrega a própia página -->
+
+<!-- 
+Criação de tabelas.
+tags: table, tr, td, th
+tr = table row
+td = table data
+th = table header
+
+-->
+
+<!-- tr = table row--->
+<!--th = table header -->
+<!--td = table data --->
+
+<!--
+Tabelas. Continuação..
+rowspan = mesclar linhas
+colspan = mesclar colunas
+width = largura da tabela. Definir em pixels ou porcentagem.
+
+-->
+
+<!--
+Formulários=> são elementos que permitem a entrada de dados do usuário.
+- tags: form, input, button, textarea, select, option
+- form: formulário
+- input: campo de entrada de dados
+- button: botão
+- textarea: campo de texto
+- select: caixa de seleção
+- option: opção de seleção
+- radio: botão de seleção
+- checkbox: caixa de seleção
+
+
+-->
+
+<!--
+type = tipo do input, no caso texto.
+os tipos de type são:
+- text: campo de texto
+- password: campo de senha
+- email: campo de email
+- number: campo de número
+- date: campo de data
+- radio: botão de seleção
+- checkbox: caixa de seleção
+- submit: botão de envio
+- button: botão
+- file: campo de arquivo
+- hidden: campo oculto
+- image: campo de imagem
+- reset: botão de reset
+- tel: campo de telefone
+- url: campo de url
+- search: campo de busca
+- color: campo de cor
+- range: campo de intervalo
+- password: campo de senha
+- time: campo de hora
+- week: campo de semana
+- month: campo de mês
+- datetime-local: campo de data e hora
+
+
+
+id = identificador do input
+
+name = nome do input, é o nome que será enviado para o servidor e recuperado 
+com uma linguagem de programação.
+Também é utilizado para passar os dados para a próxima página...
+(ver url)
+
+placeholder = texto que aparece no campo antes do usuário digitar
+required = campo obrigatório
+-->
+
+<!--
+value = texto que aparece no botão
+type = submit: botão de envio, no entanto precisa de uma lingaguem de
+programação para enviar os dados.
+OBS: o botão de envio é o único que precisa de uma linguagem de programação.
+OBS2: deixar sempre por último o botão de envio.
+
+-->
+
+<!--
+Formulários=> são elementos que permitem a entrada de dados do usuário.
+- tags: form, input, button, textarea, select, option
+- form: formulário
+- input: campo de entrada de dados
+- button: botão
+- textarea: campo de texto
+- select: caixa de seleção
+- option: opção de seleção
+- radio: botão de seleção
+- checkbox: caixa de seleção
+
+
+-->
+
+<meta charset="UTF-8"> <!-- Define a codificação de caracteres usada -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a visualização em dispositivos móveis -->
+<title>Exemplo Completo de Formulário HTML5</title> <!-- Define o título da página -->
+
+<!-- action:
+Este atributo indica para onde os dados do formulário serão enviados ao clicar no botão de envio (submit).
+Neste exemplo, /submit_form representa um caminho genérico que seria substituído pelo endereço real (por exemplo, um arquivo PHP, Python, JavaScript ou uma API que irá processar os dados enviados).
+
+Exemplos reais:
+
+Um script PHP: action="processa.php"
+Um servidor Node.js: action="/api/cadastrarUsuario"
+Um script Python (Django, Flask): action="/cadastrar"
+method:
+Este atributo especifica o método HTTP que será utilizado para enviar os dados ao servidor. Os mais comuns são:
+
+GET: Envia os dados pela URL. Não recomendado para informações sensíveis
+POST: Envia os dados no corpo da requisição HTTP, não aparecendo na URL. Mais seguro e ideal para formulários com informações sensíveis (senhas, e-mails, cadastros).
+
+
+-->
+
+<!--
+- action = processa.aspx ou processa.php
+uma action tem a função de enviar os dados para um servidor, que irá processar esses dados.
+O atributo action é obrigatório e deve conter o endereço para onde os dados do
+formulário serão enviados. Geralmente é uma página que irá processar os dados. 
+A referência para pegar os dados, está no atributo name.!
+- method = get ou post
+O atributo method define como os dados do formulário serão enviados ao servidor.
+O método GET envia os dados pela URL, enquanto o método POST envia os dados no corpo da requisição.
+O método POST é mais seguro e recomendado para formulários que enviam informações sensíveis, como senhas.
+-->
+
+<form action="#" method="post"> <!-- Inicia o formulário e define o método HTTP e ação (destino dos dados) -->
+
+    <!-- Input de texto para nome -->
+    <label>Nome Completo:</label><br> <!-- Associa o rótulo ao campo com id nome -->
+    <!--type = tipo do input, no caso texto
+        id = identificador do input
+        name = nome do input, é o nome que será enviado para o servidor e recuperado 
+        com uma linguagem de programação.
+        placeholder = texto que aparece no campo antes do usuário digitar
+        required = campo obrigatório
+    -->
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required> <!-- Campo obrigatório de entrada de texto -->
+    <br><br>
+
+    <!-- Input específico para e-mail -->
+    <label>Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Digite seu email" required> <!-- Campo obrigatório específico para e-mails -->
+    <br><br>
+
+    <!-- Área para texto longo ou observações -->
+    <label>Observações:</label><br>
+    <textarea id="observacoes" name="observacoes" rows="4" cols="40" placeholder="Escreva suas observações aqui..."></textarea> <!-- Área para entrada de textos mais extensos -->
+    <br><br>
+
+    <!-- Menu suspenso para seleção de opções pré-definidas -->
+    <label>Selecione seu estado:</label><br>
+    <select id="estado" name="estado"> <!-- Campo de seleção única de opções -->
+        <option value="">Selecione...</option> <!-- Opção inicial vazia -->
+        <option value="DF">Distrito Federal</option> <!-- Cada opção envia um valor específico ao servidor -->
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="MG">Minas Gerais</option>
+    </select>
+    <br><br>
+
+    <!-- Botões de rádio para seleção única -->
+     <!-- 
+     Observe que para sexo e interesse, utilizamos o mesmo atributo name para agrupar as opções.
+     Isso faz com que apenas uma opção seja selecionada em cada grupo.
+
+     Para diferenciar masculino e feminino, utilizamos o atributo value 
+     para enviar um valor específico ao servidor. Posso passar M ou F, por exemplo.
+     OBS.1: radio é um botão de seleção, ou seja, só pode ser selecionado um deles.
+     OBS.2: checkbox é uma caixa de seleção, ou seja, pode ser selecionado mais de um.
+
+          -->
+    <label>Sexo:</label><br>
+    <input type="radio" id="masculino" name="sexo" value="masculino"> <!-- Permite selecionar apenas uma opção -->
+    <label>Masculino</label><br>
+
+    <input type="radio" id="feminino" name="sexo" value="feminino">
+    <label>Feminino</label><br>
+
+    <input type="radio" id="outro" name="sexo" value="outro">
+    <label>Outro</label><br><br>
+
+    <!-- Caixas de seleção múltipla (checkboxes) -->
+    <label>Áreas de interesse:</label><br>
+    <input type="checkbox" id="web" name="interesse" value="web"> <!-- Permite selecionar múltiplas opções -->
+    <label>Desenvolvimento Web</label><br>
+
+    <input type="checkbox" id="dados" name="interesse" value="dados">
+    <label>Ciência de Dados</label><br>
+
+    <input type="checkbox" id="ia" name="interesse" value="ia">
+    <label>Inteligência Artificial</label><br><br>
+
+    <!-- Input para inserção de data -->
+    <label>Data de Nascimento:</label><br>
+    <input type="date" id="data_nasc" name="data_nasc"> <!-- Campo específico para datas -->
+    <br><br>
+
+    <!-- Campo para envio de arquivos -->
+    <label>Envie seu currículo:</label><br>
+    <input type="file" id="curriculo" name="curriculo"> <!-- Campo que permite enviar arquivos -->
+    <br><br>
+
+    <!-- Botões para ações do formulário -->
+    <button type="submit">Enviar Formulário</button> <!-- Envia os dados preenchidos para o servidor -->
+    <button type="reset">Limpar Formulário</button> <!-- Limpa todos os campos preenchidos do formulário -->
